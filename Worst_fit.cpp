@@ -9,7 +9,7 @@ void swap(int *a,int *b)
 	*b=temp;
 }
 		
-struct bestFit{
+struct worstFit{
 	
 	int blocksize[10], processsize[10],processId[10], blockno,blockId[10], processno, flags[10], allocation[10], i, j;	
 	public:
@@ -127,7 +127,7 @@ struct bestFit{
 };
 int main()
 {
-	bestFit obj;
+	worstFit obj;
 	obj.takeInput();
 	obj.sorting();
 	obj.allocate();
