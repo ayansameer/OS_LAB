@@ -2,13 +2,7 @@
 #include <algorithm>
 using namespace std;
 
-void swap(int *a,int *b)
-{
-	int temp=*a;
-	*a=*b;
-	*b=temp;
-}
-		
+
 struct bestFit{
 	
 	int blocksize[10], processsize[10],processId[10], blockno,blockId[10], processno, flags[10], allocation[10], i, j;	
@@ -41,6 +35,15 @@ struct bestFit{
 				swap(&processId[min],&processId[i]);				
 			}
 		}
+	
+	
+	
+	void swap(int *a,int *b)
+{
+	int temp=*a;
+	*a=*b;
+	*b=temp;
+}
 		
 		
 		
